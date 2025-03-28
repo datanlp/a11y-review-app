@@ -1,0 +1,16 @@
+<form>
+  <!-- Missing label -->
+  <input type="text" placeholder="Name">
+
+  <!-- Label not linked by for/id -->
+  <label>Name</label><input id="name">
+
+  <!-- Placeholder used instead of label -->
+  <input type="email" placeholder="Email">
+
+  <!-- Clickable div instead of button -->
+  <div (click)="submit()">Submit</div>
+
+  <!-- Error message with no aria-live -->
+  <div *ngIf="error">Something went wrong</div>
+</form>
